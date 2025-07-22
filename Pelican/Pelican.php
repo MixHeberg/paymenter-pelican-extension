@@ -275,7 +275,6 @@ class Pelican extends Server
         ];
         if ($deploymentData['auto_deploy']) {
             $serverCreationData['deploy'] = [
-                'locations' => [$settings['node']] ?? [],
                 'dedicated_ip' => $settings['dedicated_ip'] ?? false,
                 'port_range' => $settings['port_range'] ?? [],
                 'tags' => ['PaymenterDeployment'],
